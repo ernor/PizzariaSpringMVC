@@ -44,11 +44,14 @@
 					<webApp>
 						<contextPath>/pizzaria</contextPath>
 					</webApp>
+					<stopPort>9966</stopPort>
+					<stopKey>foo</stopKey>
+					<stopWait>10</stopWait>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<dependencies>
 		<!-- Spring -->
 		<dependency>
@@ -159,12 +162,13 @@
 		</dependency>
 
 
-		<!-- MYSQL -->
+		<!-- ORACLE -->
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.34</version>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc14</artifactId>
+			<version>10.2.0.4.0</version>
 		</dependency>
+
 
 		<!-- Sevlet -->
 		<dependency>
